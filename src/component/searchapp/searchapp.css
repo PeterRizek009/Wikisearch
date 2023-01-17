@@ -1,0 +1,101 @@
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1281%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(127%2c 126%2c 129%2c 0.98)'%3e%3c/rect%3e%3cpath d='M0 0L583.35 0L0 215.41z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 215.41L583.35 0L660.07 0L0 256.67z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 256.67L660.07 0L969.3000000000001 0L0 257.27000000000004z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 257.27000000000004L969.3000000000001 0L1183.5500000000002 0L0 359.07000000000005z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1440 560L1004.47 560L1440 463.89z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1440 463.89L1004.47 560L522.61 560L1440 450.07z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1440 450.07L522.61 560L405.92 560L1440 300.51z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1440 300.51L405.9200000000001 560L200.41000000000008 560L1440 217.64z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1281'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1826%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(84%2c 70%2c 133%2c 1)'%3e%3c/rect%3e%3cpath d='M1440 0L961.5 0L1440 135.7z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M961.5 0L1440 135.7L1440 145.97L534.78 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M534.78 0L1440 145.97L1440 169.46L449.95 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M449.94999999999993 0L1440 169.46L1440 417.22L310.9899999999999 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L195.79 560L0 346.2z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 346.2L195.79 560L857.63 560L0 249.87z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 249.87L857.63 560L1035.41 560L0 126.25z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 126.25L1035.41 560L1092.2 560L0 36.260000000000005z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1826'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");  background-repeat: no-repeat; */
+  background-size: cover;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.form-control {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.search-bar{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width : 100%;
+}
+.form-control{
+  width :800px;
+}
+
+
+.container i{
+  color :white;
+  font-size:24px;
+  cursor:pointer;
+  transition: 0.5s ;
+
+}
+
+.container  .yellow{
+  color : chocolate;
+}
+
+
+.card-container{
+  display: flex;
+  flex-wrap :wrap;
+  justify-content: center;
+  margin-left :40px;
+  margin-top : 20px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin : 5px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width :20%;
+  transition: 0.5s ease-in-out ;
+  cursor: pointer;
+}
+
+
+.card a{
+    text-decoration: none;
+    color: chocolate;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    font-size:20px;
+}
+
+.card a:hover{
+  text-decoration: underline;
+}
+
+.card-title{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width :40%;
+   
+  }
+
+  .form-control{
+    width :400px;
+  }
+}

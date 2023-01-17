@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './app';
 import reportWebVitals from './reportWebVitals';
-import SearchApp from './SearchApp';
+import { BrowserRouter as Router } from "react-router-dom";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <SearchApp />
-  </React.StrictMode>
+  <Router>
+    <App />
+  </Router>
 );
 
 

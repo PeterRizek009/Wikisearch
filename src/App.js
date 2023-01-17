@@ -1,38 +1,28 @@
-import { useState, useEffect } from "react";
-import './app.css'
+import { React, useState } from 'react';
+import SearchApp from './component/searchapp/searchapp';
+import About from './component/about/about.jsx';
+import SavedSearches from './component/savedsearches/savedsearches';
+import Navbar from './component/navbar/navbar';
+import {Routes, Route } from "react-router-dom";
 
-export default function App() {
-  const [name, setName] = useState("");
-  const [phone, setphone] = useState("");
 
 
-  // // useEffect(() => {
-  // //   console.log("useEffect will work on time ")
-  // // } , []);
-
-  useEffect(() => {
-    if(name || phone){
-    const debounceSearch =   setTimeout(() => {
-      }, 1200);
-     return() => {clearTimeout(debounceSearch)}
-    }
-  } , [name , phone]);
-  
+function App() {
+        const[saved , setSaved]= useState([]);
 
   return (
-    <div className="App">
-      <label>Name</label>
-      <input onChange={(e) => setName(e.target.value)} value={name} />
-      <br/>
-      <label>Phone</label>
-      <input onChange={(e) => setphone(e.target.value)} value={phone} />
-      <br/>
 
-      <p>
-        name : {name}
-        <br/>
-        phone : {phone}
-      </p>
-    </div>
+    <div className="App">
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<SearchApp saved={saved}/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/savedsearches" element={<SavedSearches saved={saved}/>} />
+        </Routes >
+    
+    </div >
+
   );
 }
+
+export default App;
