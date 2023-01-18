@@ -1,0 +1,8 @@
+footer {
+    display: block;
+    /* position: static; */
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-top: auto;
+  }

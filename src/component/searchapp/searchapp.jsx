@@ -41,7 +41,7 @@ const SearchApp = ({ saved }) => {
 
     const handleBookmark = () => {
         setBookmark(!bookmark);
-        saved.push(term)        
+        saved.push(term)
     }
 
     const fetchResult = result.map((el) => {
@@ -58,19 +58,23 @@ const SearchApp = ({ saved }) => {
     return (
         <div className='container'>
             <div className='search-bar'>
+
                 <div>
                     <input
                         type='text'
                         className='form-control py-3 my-3'
                         id='exampleFormControlInput1'
                         onChange={(e) => setTerm(e.target.value)}
-                        value={term}
-                    />
+                        value={term}/>
+                </div>
 
-                </div>
                 <div onClick={handleBookmark} className="mx-1 mt-4" >
-                    {bookmark === true ? <i className="fas fa-star yellow"></i> : <i className="fas fa-star"></i>}
+                    {bookmark === true ?
+                    <button type="button" class="btn btn-danger mx-2">Saved<i className="fas fa-star yellow"></i></button>
+                      :
+                      <button type="button" class="btn btn-outline-danger mx-2">Save Query <i className="fas fa-star"></i></button> }
                 </div>
+
             </div>
 
 

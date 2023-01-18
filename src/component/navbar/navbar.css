@@ -1,84 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100vh;
-    background-color: #fff;
-  }
-  
-  .side-navbar {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    margin-left: -1800px;
-    background-color: rgba(0, 0, 0, 0.838);
-    transition: 0.5s;
-    z-index: 150;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .active-nav {
-    margin-left: 0;
-  }
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
 
+.side-navbar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-left: -1800px;
+  background-color: rgba(0, 0, 0, 0.838);
+  transition: 0.5s;
+  z-index: 150;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.363);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar h4 {
+  color : white;
+  font-weight: bold;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  border : 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.navbar h4 i{
+  color : white;
+  border : 1px solid chocolate;
+  border-radius: 5px;
+  background-color: chocolate;
+}
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+#menu-btn {
+  background-color: chocolate;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+#menu-btn:hover {
+  box-shadow: 0px 1px 5px 4px rgba(219,201,201,0.75);
   
-  /* for main section */
-  #menu-btn {
-    background-color: chocolate;
-    color: #fff;
-    margin-top: 5px;
-  }
-  
+}
+
+/* .no-active {
+  transition: 0.4s;
+  right: 300px;
+  position: absolute;
+} */
+
+/* .active-cont {
+  right: 300px;
+  position: absolute;
+} */
+
+.nav .nav-link i {
+  color: chocolate;
+  margin-right: 10px;
+}
+.nav .nav-link a,
+i {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s color ease-in-out;
+}
+.nav .nav-link a:hover {
+  color: chocolate;
+}
+.nav .nav-link i:hover {
+  color: white;
+}
+
+.nav-link i:last-child {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
   .no-active {
     transition: 0.4s;
-    right: 300px;
+    right: 10px;
     position: absolute;
-    top:10px;
+    top: 15px;
   }
-
+  #menu-btn {
+    font-size: 16px;
+  }
+  .nav {
+    justify-content: flex-start;
+  }
   .active-cont {
-    right: 300px;
+    right: 10px;
+    top: 15px;
     position: absolute;
   }
-  
-  .nav .nav-link  i{
-    color: chocolate;
-    margin-right: 10px;
-  }
- .nav .nav-link a , i{
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.2s color ease-in-out;
-   }
-   .nav .nav-link a:hover{
-      color :chocolate;
-   }
-   .nav .nav-link  i:hover{
-    color: white;
-   }
-
-   .nav-link i:last-child{
-    font-size: 40px;
-   }
-
-  @media screen and (max-width: 1000px) {
-    .no-active {
-      transition: 0.4s;
-      right: 10px;
-      position: absolute;
-      top:15px;
-    }
-
-
-    .active-cont {
-      right: 10px;
-      top:15px;
-      position: absolute;
-    }
-  }
-
+}
